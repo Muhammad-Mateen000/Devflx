@@ -37,7 +37,7 @@ const Hero1 = ({
     },
   },
   image = {
-    src: "/public/images/hero.png",
+    src: "/images/hero.png",
     alt: "Hero section demo image showing interface components",
   },
 }) => {

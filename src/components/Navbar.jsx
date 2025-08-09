@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center py-5 px-6">
         <div className="flex items-center space-x-6">
           <img
-            src="/public/images/Devflx Logo-01.png"
+            src="/images/Devflx Logo-01.png"
             alt="Logo"
             className="h-11 w-auto"
           />
