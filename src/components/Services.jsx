@@ -39,10 +39,10 @@ const Services4 = () => {
       <div className="container">
         <div className="mx-auto space-y-12 px-6">
           <div className="space-y-4 text-center">
-            <h2 className="text-4xl font-bold tracking-tight md:text-4xl text-secondary">
+            <h2 className="font-bold text-4xl text-secondary">
               Services
             </h2>
-            <p className="mx-auto max-w-2xl text-lg tracking-tight md:text-xl text-muted-foreground">
+            <p className="mx-auto text-muted-foreground">
               We craft digital experiences that captivate and convert, bringing
               your vision to life.
             </p>

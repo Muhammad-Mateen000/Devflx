@@ -6,8 +6,7 @@ import {
 } from "@/components/ui/accordion";
 
 const Faq1 = ({
-  heading = "Frequently asked questions",
-
+  heading = "Frequently Asked Questions",
   items = [
     {
       id: "faq-1",
@@ -51,26 +50,30 @@ const Faq1 = ({
       answer:
         "Yes, including links to more detailed information or related resources can be very helpful for users who want to learn more about a particular topic.",
     },
-  ]
+  ],
 }) => {
   return (
-    <section className="py-32">
-      <div className="container max-w-3xl">
-        <h1 className="mb-4 text-3xl font-semibold md:mb-11 md:text-4xl">
+    <section className="flex justify-center pb-28 pt-8">
+      <div className="container max-w-6xl">
+        <h1 className="mb-4 text-3xl font-bold md:mb-11 md:text-4xl text-center text-secondary ">
           {heading}
         </h1>
-        <Accordion type="single" collapsible>
+
+        {/* Grid layout for FAQs */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {items.map((item, index) => (
-            <AccordionItem key={index} value={`item-${index}`}>
-              <AccordionTrigger className="font-semibold hover:no-underline">
-                {item.question}
-              </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground">
-                {item.answer}
-              </AccordionContent>
-            </AccordionItem>
+            <Accordion key={index} type="single" collapsible>
+              <AccordionItem value={`item-${index}`}>
+                <AccordionTrigger className="font-semibold hover:no-underline">
+                  {item.question}
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground">
+                  {item.answer}
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           ))}
-        </Accordion>
+        </div>
       </div>
     </section>
   );

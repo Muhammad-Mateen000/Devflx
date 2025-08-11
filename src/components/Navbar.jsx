@@ -33,12 +33,9 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="">
-          <Button
-            variant=""
-            className="bg-secondary px-5 font-poppins font-semibold"
-          >
-            Get Started
-          </Button>
+          <Button variant="secondary" size="" className="px-6 text-white shadow-md">
+              Get Started
+            </Button>
         </div>
       </div>
     </nav>

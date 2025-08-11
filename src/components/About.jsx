@@ -94,11 +94,11 @@ const About3 = ({
   achievements = defaultAchievements,
 }) => {
   return (
-    <section className="py-20 px-6">
+    <section className="py-10 px-6">
       <div className="container">
-        <div className="mb-12 grid gap-5 text-center md:grid-cols-2 md:text-left">
-          <h1 className="text-4xl font-bold text-secondary">{title}</h1>
-          <p className="text-muted-foreground">{description}</p>
+        <div className="mb-12 text-center">
+          <h1 className="text-4xl font-bold text-secondary pb-6">{title}</h1>
+          <p className="text-muted-foreground w-[55%] m-auto">{description}</p>
         </div>
         <div className="grid gap-7 lg:grid-cols-3">
           <img
@@ -118,7 +118,7 @@ const About3 = ({
                 <p className="text-muted-foreground">{breakout.description}</p>
               </div>
               <Link to={'/about'}>
-                <Button variant="outline" className="mr-auto bg-secondary text-white" asChild>
+                <Button variant="secondary" className="mr-auto text-white" asChild>
                   <a href={breakout.buttonUrl} target="_blank">
                     {breakout.buttonText}
                   </a>

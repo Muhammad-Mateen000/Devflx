@@ -19,11 +19,11 @@ const Contact1 = ({
   return (
     <section className="bg-background pb-20 px-6">
       <div className="container">
-        <div className="mb-14">
-          <h1 className="mb-3 mt-2 text-balance text-3xl font-semibold md:text-4xl">
+        <div className="mb-14 text-center">
+          <h1 className="mb-3 mt-2 text-3xl font-bold md:text-4xl text-secondary">
             {title}
           </h1>
-          <p className="text-muted-foreground max-w-xl text-lg">
+          <p className="text-muted-foreground pt-4">
             {description}
           </p>
         </div>
