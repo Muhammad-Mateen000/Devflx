@@ -71,15 +71,15 @@ const About3 = ({
   title = "About Us",
   description = "Devflx is a dedicated software team crafting smart, scalable solutions that help businesses succeed in the digital era.",
   mainImage = {
-    src: "/public/images/about1.png",
+    src: "/images/about1.png",
     alt: "placeholder",
   },
   secondaryImage = {
-    src: "/public/images/about us.png",
+    src: "/images/about us.png",
     alt: "placeholder",
   },
   breakout = {
-    src: "/public/images/Logo Mark-01.png",
+    src: "/images/Logo Mark-01.png",
     alt: "logo",
     title: "Building Smart Software for Modern Businesses",
     description:
