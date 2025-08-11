@@ -6,7 +6,7 @@ const Contact1 = ({
   description = "We are available for questions, feedback, or collaboration opportunities. Let us know how we can help!",
 }) => {
   return (
-    <section className="bg-background pb-20 px-6">
+    <section id="contact" className="bg-background pb-20 px-6">
       {/* Heading */}
       <div className="mb-14 text-center">
         <h1 className="mb-3 mt-2 text-3xl font-bold md:text-4xl text-secondary font-spaceGrotesk">
@@ -18,7 +18,7 @@ const Contact1 = ({
       </div>
 
       {/* Content */}
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start shadow-md bg-gray-50 p-10">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start shadow-md bg-gray-50 p-10">
         {/* Left Side - Contact Info */}
         <div className="space-y-8">
           <div>
@@ -44,7 +44,6 @@ const Contact1 = ({
             <h1 className="font-semibold font-spaceGrotesk text-xl ">
               Phone:
             </h1>
-
             <div className="flex items-center gap-4">
               <Phone className="text-secondary w-6 h-6" />
               <span className="text-muted-foreground">+92 300 1234567</span>
@@ -52,7 +51,6 @@ const Contact1 = ({
             <h1 className="font-semibold font-spaceGrotesk text-xl">
               Address:
             </h1>
-
             <div className="flex items-center gap-4">
               <MapPin className="text-secondary w-6 h-6" />
               <span className="text-muted-foreground">

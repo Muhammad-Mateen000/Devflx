@@ -1,7 +1,6 @@
 import React from "react";
-// import logo from "./logo.png"; // apni logo image ka path yahan dena
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <nav className="">
@@ -15,27 +14,41 @@ const Navbar = () => {
         </div>
         <div>
           <ul className="hidden md:flex space-x-7 font-semibold text-sm font-spaceGrotesk tracking-wide">
-            <Link to={"/"}>
-              <li className="hover:text-blue-600 cursor-pointer">Home</li>
-            </Link>
-            <Link to={"/about"}>
-              <li className="hover:text-blue-600 cursor-pointer">About</li>
-            </Link>
-            <Link to={"/services"}>
-              <li className="hover:text-blue-600 cursor-pointer">Services</li>
-            </Link>
-            <Link to={"/faqs"}>
-              <li className="hover:text-blue-600 cursor-pointer">FAQs</li>
-            </Link>
-            <Link to={"/contact"}>
-              <li className="hover:text-blue-600 cursor-pointer">Contact</li>
-            </Link>
+            <li>
+              <a href="#home" className="hover:text-blue-600 cursor-pointer">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#about" className="hover:text-blue-600 cursor-pointer">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#services" className="hover:text-blue-600 cursor-pointer">
+                Services
+              </a>
+            </li>
+            <li>
+              <a href="#faqs" className="hover:text-blue-600 cursor-pointer">
+                FAQs
+              </a>
+            </li>
+            <li>
+              <a href="#contact" className="hover:text-blue-600 cursor-pointer">
+                Contact
+              </a>
+            </li>
           </ul>
         </div>
-        <div className="">
-          <Button variant="secondary" size="" className="px-6 text-white shadow-md">
-              Get Started
-            </Button>
+        <div>
+          <Button
+            variant="secondary"
+            size=""
+            className="px-6 text-white shadow-md"
+          >
+            Get Started
+          </Button>
         </div>
       </div>
     </nav>

@@ -94,7 +94,7 @@ const About3 = ({
   achievements = defaultAchievements,
 }) => {
   return (
-    <section className="py-10 px-6">
+    <section id="about" className="py-10 px-6">
       <div className="container">
         <div className="mb-12 text-center">
           <h1 className="text-4xl font-bold text-secondary pb-6 font-spaceGrotesk">{title}</h1>

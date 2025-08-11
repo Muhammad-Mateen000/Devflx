@@ -53,21 +53,26 @@ const Faq1 = ({
   ],
 }) => {
   return (
-    <section className="flex justify-center pb-28 pt-8">
-      <div className="container max-w-6xl">
+    <section id="faqs" className="flex justify-center pb-28 pt-6">
+      <div className="container max-w-7xl px-6">
         <h1 className="mb-4 text-3xl font-bold md:mb-11 md:text-4xl text-center text-secondary font-spaceGrotesk">
           {heading}
         </h1>
 
         {/* Grid layout for FAQs */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {items.map((item, index) => (
-            <Accordion key={index} type="single" collapsible>
-              <AccordionItem value={`item-${index}`}>
-                <AccordionTrigger className="font-semibold hover:no-underline text-[15px] font-spaceGrotesk leading-relaxed">
+            <Accordion key={index} type="single" collapsible className="bg-gray-50">
+              <AccordionItem
+                value={`item-${index}`}
+                className="rounded-lg border border-border shadow-sm hover:shadow-md transition-all duration-300"
+              >
+                <AccordionTrigger
+                  className="font-semibold hover:no-underline text-[16px] font-spaceGrotesk leading-relaxed px-5 py-4 data-[state=open]:text-secondary data-[state=open]:bg-muted/30 rounded-t-lg transition-colors"
+                >
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground font-poppins">
+                <AccordionContent className="text-muted-foreground font-poppins px-5 pb-4 pt-1 leading-relaxed text-sm">
                   {item.answer}
                 </AccordionContent>
               </AccordionItem>

@@ -24,7 +24,7 @@ export function Hero1() {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-background">
+    <section id="home" className="relative overflow-hidden bg-background">
       <div className="container relative mx-auto px-4 py-24 sm:px-6 lg:py-24">
         <div className="mx-auto max-w-4xl text-center animate-fade-up">
           {/* Badge */}
