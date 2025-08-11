@@ -14,7 +14,7 @@ const Navbar = () => {
           />
         </div>
         <div>
-          <ul className="hidden md:flex space-x-7 font-semibold text-sm font-poppins">
+          <ul className="hidden md:flex space-x-7 font-semibold text-sm font-spaceGrotesk tracking-wide">
             <Link to={"/"}>
               <li className="hover:text-blue-600 cursor-pointer">Home</li>
             </Link>

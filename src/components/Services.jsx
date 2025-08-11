@@ -39,10 +39,10 @@ const Services4 = () => {
       <div className="container">
         <div className="mx-auto space-y-12 px-6">
           <div className="space-y-4 text-center">
-            <h2 className="font-bold text-4xl text-secondary">
+            <h2 className="font-bold text-4xl text-secondary font-spaceGrotesk">
               Services
             </h2>
-            <p className="mx-auto text-muted-foreground">
+            <p className="mx-auto text-muted-foreground font-poppins">
               We craft digital experiences that captivate and convert, bringing
               your vision to life.
             </p>
@@ -58,16 +58,16 @@ const Services4 = () => {
                   <div className="bg-secondary text-white rounded-full p-3">
                     {service.icon}
                   </div>
-                  <h3 className="text-xl font-semibold text-secondary">{service.title}</h3>
+                  <h3 className="text-xl font-semibold text-secondary font-spaceGrotesk">{service.title}</h3>
                 </div>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground font-poppins">
                   {service.description}
                 </p>
                 <div className="space-y-2">
                   {service.items.map((item, itemIndex) => (
                     <div key={itemIndex} className="flex items-center gap-2">
                       <div className="bg-foreground h-1.5 w-1.5 rounded-full" />
-                      <span className="text-sm font-medium">{item}</span>
+                      <span className="text-sm font-poppins font-medium">{item}</span>
                     </div>
                   ))}
                 </div>

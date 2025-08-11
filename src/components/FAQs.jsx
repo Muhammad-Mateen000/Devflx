@@ -55,7 +55,7 @@ const Faq1 = ({
   return (
     <section className="flex justify-center pb-28 pt-8">
       <div className="container max-w-6xl">
-        <h1 className="mb-4 text-3xl font-bold md:mb-11 md:text-4xl text-center text-secondary ">
+        <h1 className="mb-4 text-3xl font-bold md:mb-11 md:text-4xl text-center text-secondary font-spaceGrotesk">
           {heading}
         </h1>
 
@@ -64,10 +64,10 @@ const Faq1 = ({
           {items.map((item, index) => (
             <Accordion key={index} type="single" collapsible>
               <AccordionItem value={`item-${index}`}>
-                <AccordionTrigger className="font-semibold hover:no-underline">
+                <AccordionTrigger className="font-semibold hover:no-underline text-[15px] font-spaceGrotesk leading-relaxed">
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">
+                <AccordionContent className="text-muted-foreground font-poppins">
                   {item.answer}
                 </AccordionContent>
               </AccordionItem>

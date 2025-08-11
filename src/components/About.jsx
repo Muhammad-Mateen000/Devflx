@@ -97,8 +97,8 @@ const About3 = ({
     <section className="py-10 px-6">
       <div className="container">
         <div className="mb-12 text-center">
-          <h1 className="text-4xl font-bold text-secondary pb-6">{title}</h1>
-          <p className="text-muted-foreground w-[55%] m-auto">{description}</p>
+          <h1 className="text-4xl font-bold text-secondary pb-6 font-spaceGrotesk">{title}</h1>
+          <p className="text-muted-foreground w-[55%] m-auto font-poppins">{description}</p>
         </div>
         <div className="grid gap-7 lg:grid-cols-3">
           <img
@@ -114,11 +114,11 @@ const About3 = ({
                 className="mr-auto h-10"
               />
               <div>
-                <p className="mb-2 text-lg font-semibold">{breakout.title}</p>
-                <p className="text-muted-foreground">{breakout.description}</p>
+                <p className="mb-2 text-lg font-semibold font-poppins">{breakout.title}</p>
+                <p className="text-muted-foreground font-poppins">{breakout.description}</p>
               </div>
               <Link to={'/about'}>
-                <Button variant="secondary" className="mr-auto text-white" asChild>
+                <Button variant="secondary" className="mr-auto text-white font-poppins" asChild>
                   <a href={breakout.buttonUrl} target="_blank">
                     {breakout.buttonText}
                   </a>
@@ -133,7 +133,7 @@ const About3 = ({
           </div>
         </div>
         <div className="py-32">
-          <p className="text-center">{companiesTitle} </p>
+          <p className="text-center font-poppins">{companiesTitle} </p>
           <div className="mt-8 flex flex-wrap justify-center gap-8">
             {companies.map((company, idx) => (
               <div className="flex items-center gap-3" key={company.src + idx}>
@@ -148,18 +148,18 @@ const About3 = ({
         </div>
         <div className="relative overflow-hidden rounded-xl bg-muted p-10 md:p-16">
           <div className="flex flex-col gap-4 text-center md:text-left">
-            <h2 className="text-4xl font-semibold text-secondary">
+            <h2 className="text-4xl font-semibold text-secondary font-spaceGrotesk">
               {achievementsTitle}
             </h2>
-            <p className="max-w-xl text-muted-foreground">
+            <p className="max-w-xl text-muted-foreground font-poppins">
               {achievementsDescription}
             </p>
           </div>
           <div className="mt-10 flex flex-wrap justify-between gap-10 text-center">
             {achievements.map((item, idx) => (
               <div className="flex flex-col gap-4" key={item.label + idx}>
-                <p className="">{item.label}</p>
-                <span className="text-4xl text-secondary font-semibold md:text-5xl">
+                <p className="font-poppins">{item.label}</p>
+                <span className="text-4xl text-secondary font-semibold md:text-5xl font-spaceGrotesk">
                   {item.value}
                 </span>
               </div>

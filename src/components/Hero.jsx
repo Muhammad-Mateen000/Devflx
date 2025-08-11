@@ -33,7 +33,7 @@ export function Hero1() {
           </Badge>
 
           {/* Main heading */}
-          <h1 className="mb-6 text-4xl font-bold tracking-tight text-foreground sm:text-6xl lg:text-7xl">
+          <h1 className="mb-6 text-4xl font-bold sm:text-6xl lg:text-7xl font-secondaryfont">
             Transforming Ideas Into{" "}
             <span className="bg-gradient-to-r from-secondary to-secondary/60 bg-clip-text text-transparent">
               Powerful
@@ -42,7 +42,7 @@ export function Hero1() {
           </h1>
 
           {/* Subtitle */}
-          <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground sm:text-xl">
+          <p className="mx-auto mb-8 max-w-2xl font-poppins text-muted-foreground sm:text-lg">
             Turning ideas into powerful, scalable software that drives success
             and innovation for businesses worldwide.
           </p>
@@ -52,14 +52,14 @@ export function Hero1() {
             <Button
               variant="secondary"
               size="lg"
-              className="group px-8 py-3 text-white shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg"
+              className="group px-8 py-3 text-white font-poppins font-medium shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg"
             >
               Get Started
             </Button>
             <Button
               variant="outline"
               size="lg"
-              className="group px-8 py-3 bg-transparent shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg"
+              className="px-8 py-3 bg-transparent font-poppins shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg"
             >
               Learn More
             </Button>
@@ -67,7 +67,7 @@ export function Hero1() {
 
           {/* Services */}
           <div className="mt-20">
-            <p className="mb-8 text-center text-muted-foreground">
+            <p className="mb-8 text-center text-muted-foreground font-poppins">
               Powering the next generation of digital products
             </p>
             <div className="flex flex-wrap max-w-[80%] m-auto items-center justify-center gap-8">
@@ -79,7 +79,7 @@ export function Hero1() {
                     className="flex items-center gap-2 transition-all duration-300 hover:scale-105 hover:text-secondary"
                   >
                     <Icon className="w-5 h-5" aria-hidden="true" />
-                    <span className="text-sm font-medium">{service.text}</span>
+                    <span className="text-sm font-poppins">{service.text}</span>
                   </div>
                 );
               })}
