@@ -1,6 +1,7 @@
 import React from "react";
 // import logo from "./logo.png"; // apni logo image ka path yahan dena
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className="">
@@ -14,15 +15,30 @@ const Navbar = () => {
         </div>
         <div>
           <ul className="hidden md:flex space-x-7 font-semibold text-sm font-poppins">
-            <li className="hover:text-blue-600 cursor-pointer">Home</li>
-            <li className="hover:text-blue-600 cursor-pointer">About</li>
-            <li className="hover:text-blue-600 cursor-pointer">Services</li>
-            <li className="hover:text-blue-600 cursor-pointer">FAQs</li>
-            <li className="hover:text-blue-600 cursor-pointer">Contact</li>
+            <Link to={"/"}>
+              <li className="hover:text-blue-600 cursor-pointer">Home</li>
+            </Link>
+            <Link to={"/about"}>
+              <li className="hover:text-blue-600 cursor-pointer">About</li>
+            </Link>
+            <Link to={"/services"}>
+              <li className="hover:text-blue-600 cursor-pointer">Services</li>
+            </Link>
+            <Link to={"/faqs"}>
+              <li className="hover:text-blue-600 cursor-pointer">FAQs</li>
+            </Link>
+            <Link to={"/contact"}>
+              <li className="hover:text-blue-600 cursor-pointer">Contact</li>
+            </Link>
           </ul>
         </div>
-        <div className="">  
-          <Button variant="" className="bg-secondary px-5 font-poppins font-semibold">Get Started</Button>
+        <div className="">
+          <Button
+            variant=""
+            className="bg-secondary px-5 font-poppins font-semibold"
+          >
+            Get Started
+          </Button>
         </div>
       </div>
     </nav>

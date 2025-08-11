@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 // interface About3Props {
 //   title?: string;
@@ -68,21 +69,21 @@ const defaultAchievements = [
 
 const About3 = ({
   title = "About Us",
-  description = "Shadcnblocks is a passionate team dedicated to creating innovative solutions that empower businesses to thrive in the digital age.",
+  description = "Devflx is a dedicated software team crafting smart, scalable solutions that help businesses succeed in the digital era.",
   mainImage = {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
+    src: "/public/images/about1.png",
     alt: "placeholder",
   },
   secondaryImage = {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
+    src: "/public/images/about us.png",
     alt: "placeholder",
   },
   breakout = {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg",
+    src: "/public/images/Logo Mark-01.png",
     alt: "logo",
-    title: "Hundreds of blocks at Shadcnblocks.com",
+    title: "Building Smart Software for Modern Businesses",
     description:
-      "Providing businesses with effective tools to improve workflows, boost efficiency, and encourage growth.",
+      "Providing businesses with innovative digital solutions to streamline workflows, enhance productivity, and accelerate growth.",
     buttonText: "Discover more",
     buttonUrl: "https://shadcnblocks.com",
   },
@@ -95,8 +96,8 @@ const About3 = ({
   return (
     <section className="py-20 px-6">
       <div className="container">
-        <div className="mb-14 grid gap-5 text-center md:grid-cols-2 md:text-left">
-          <h1 className="text-5xl font-semibold">{title}</h1>
+        <div className="mb-12 grid gap-5 text-center md:grid-cols-2 md:text-left">
+          <h1 className="text-4xl font-bold text-secondary">{title}</h1>
           <p className="text-muted-foreground">{description}</p>
         </div>
         <div className="grid gap-7 lg:grid-cols-3">
@@ -110,17 +111,19 @@ const About3 = ({
               <img
                 src={breakout.src}
                 alt={breakout.alt}
-                className="mr-auto h-12"
+                className="mr-auto h-10"
               />
               <div>
                 <p className="mb-2 text-lg font-semibold">{breakout.title}</p>
                 <p className="text-muted-foreground">{breakout.description}</p>
               </div>
-              <Button variant="outline" className="mr-auto" asChild>
-                <a href={breakout.buttonUrl} target="_blank">
-                  {breakout.buttonText}
-                </a>
-              </Button>
+              <Link to={'/about'}>
+                <Button variant="outline" className="mr-auto bg-secondary text-white" asChild>
+                  <a href={breakout.buttonUrl} target="_blank">
+                    {breakout.buttonText}
+                  </a>
+                </Button>
+              </Link>
             </div>
             <img
               src={secondaryImage.src}
@@ -145,7 +148,9 @@ const About3 = ({
         </div>
         <div className="relative overflow-hidden rounded-xl bg-muted p-10 md:p-16">
           <div className="flex flex-col gap-4 text-center md:text-left">
-            <h2 className="text-4xl font-semibold">{achievementsTitle}</h2>
+            <h2 className="text-4xl font-semibold text-secondary">
+              {achievementsTitle}
+            </h2>
             <p className="max-w-xl text-muted-foreground">
               {achievementsDescription}
             </p>
@@ -153,8 +158,8 @@ const About3 = ({
           <div className="mt-10 flex flex-wrap justify-between gap-10 text-center">
             {achievements.map((item, idx) => (
               <div className="flex flex-col gap-4" key={item.label + idx}>
-                <p>{item.label}</p>
-                <span className="text-4xl font-semibold md:text-5xl">
+                <p className="">{item.label}</p>
+                <span className="text-4xl text-secondary font-semibold md:text-5xl">
                   {item.value}
                 </span>
               </div>

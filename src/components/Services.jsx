@@ -42,7 +42,7 @@ const Services4 = () => {
             <h2 className="text-4xl font-bold tracking-tight md:text-4xl text-secondary">
               Services
             </h2>
-            <p className="mx-auto max-w-2xl text-lg tracking-tight md:text-xl">
+            <p className="mx-auto max-w-2xl text-lg tracking-tight md:text-xl text-muted-foreground">
               We craft digital experiences that captivate and convert, bringing
               your vision to life.
             </p>

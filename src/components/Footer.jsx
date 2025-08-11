@@ -1,62 +1,67 @@
-import { Facebook, Twitter, Linkedin, Mail } from "lucide-react";
+import React from "react";
+import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
-export default function Footer() {
+const Footer = () => {
   return (
-    <footer className="">
-      <div className="container mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+    <footer className="py-10 text-black">
+      {/* Top Section */}
+      <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-8">
         
         {/* Company Info */}
-        <div>
-          <h2 className="text-2xl font-bold">Devflx</h2>
-          <p className="mt-4 text-sm">
-            Devflx is a creative software house specializing in modern web,
-            mobile, and custom software solutions to help businesses grow.
+        <div className="flex-1">
+          <img
+            src="/images/Devflx Logo-01.png"
+            alt="Devflx Logo"
+            className="h-11 w-auto"
+          />
+          <p className="mt-4 text-sm leading-6">
+            Devflx is a modern software house providing cutting-edge web,
+            mobile, and cloud solutions to help businesses grow digitally.
           </p>
         </div>
 
         {/* Quick Links */}
-        <div>
+        <div className="flex-1">
           <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-          <ul className="space-y-2">
-            <li><a href="/" className="">Home</a></li>
-            <li><a href="/about" className="">About Us</a></li>
-            <li><a href="/services" className="">Services</a></li>
-            <li><a href="/contact" className="">Contact</a></li>
+          <ul className="space-y-2 text-sm">
+            <li><a href="/" className="hover:underline">Home</a></li>
+            <li><a href="/about" className="hover:underline">About Us</a></li>
+            <li><a href="/services" className="hover:underline">Services</a></li>
+            <li><a href="/contact" className="hover:underline">Contact</a></li>
           </ul>
         </div>
 
         {/* Services */}
-        <div>
+        <div className="flex-1">
           <h3 className="text-lg font-semibold mb-4">Our Services</h3>
-          <ul className="space-y-2">
+          <ul className="space-y-2 text-sm">
             <li>Web Development</li>
             <li>Mobile App Development</li>
             <li>UI/UX Design</li>
-            <li>Custom Software</li>
+            <li>Cloud Solutions</li>
           </ul>
         </div>
 
-        {/* Contact & Social */}
-        <div>
-          <h3 className="text-lg font-semibold  mb-4">Get in Touch</h3>
-          <p>Email: <a href="mailto:info@devflx.com" className="">info@devflx.com</a></p>
-          <p>Phone: +92 300 1234567</p>
-          <div className="flex space-x-4 mt-4">
-            <a href="#" className=""><Facebook /></a>
-            <a href="#" className=""><Twitter /></a>
-            <a href="#" className=""><Linkedin /></a>
-            <a href="mailto:info@devflx.com" className="hover:text-white"><Mail /></a>
+        {/* Contact Info */}
+        <div className="flex-1">
+          <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+          <p className="text-sm">Email: info@devflx.com</p>
+          <p className="text-sm">Phone: +92 300 1234567</p>
+          <div className="flex space-x-4 mt-4 text-lg">
+            <a href="#" className="hover:text-gray-600"><Facebook size={18} /></a>
+            <a href="#" className="hover:text-gray-600"><Twitter size={18} /></a>
+            <a href="#" className="hover:text-gray-600"><Linkedin size={18} /></a>
+            <a href="#" className="hover:text-gray-600"><Instagram size={18} /></a>
           </div>
         </div>
-
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-700 mt-8">
-        <p className="text-center py-4 text-sm">
-          © {new Date().getFullYear()} Devflx. All rights reserved.
-        </p>
+      <div className="border-t border-gray-300 mt-8 pt-4 text-center text-sm text-gray-500">
+        © {new Date().getFullYear()} Devflx. All rights reserved.
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;

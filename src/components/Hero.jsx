@@ -52,10 +52,10 @@ const Hero1 = ({
                 <ArrowUpRight className="ml-2 size-4" />
               </Badge>
             )} */}
-            <h1 className="mb-6 text-pretty text-4xl font-bold lg:text-6xl font-spaceGrotesk">
+            <h1 className="mb-6 text-4xl font-bold lg:text-6xl font-spaceGrotesk">
               {heading}
             </h1>
-            <p className="mb-8 max-w-xl lg:text-xl">
+            <p className="mb-8 max-w-xl lg:text-xl text-muted-foreground">
               {description}
             </p>
             <div className="flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start">
