@@ -101,7 +101,7 @@ const ContactForm = () => {
             )}
           />
 
-          <Button type="submit" className="w-full bg-secondary">
+          <Button variant="secondary" type="submit" className="w-full text-white">
             Send
           </Button>
         </form>
