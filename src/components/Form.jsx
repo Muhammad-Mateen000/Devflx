@@ -54,7 +54,7 @@ const ContactForm = () => {
     <div className="mx-auto bg-white shadow-lg rounded-lg p-8">
       <h2 className="text-2xl font-bold text-center">Contact Us</h2>
       <ShadForm {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
           
           {/* Name */}
           <FormField
@@ -101,7 +101,7 @@ const ContactForm = () => {
             )}
           />
 
-          <Button type="submit" className="w-full">
+          <Button type="submit" className="w-full bg-secondary">
             Send
           </Button>
         </form>
