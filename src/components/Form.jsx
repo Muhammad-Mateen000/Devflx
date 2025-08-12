@@ -64,7 +64,7 @@ const ContactForm = () => {
               <FormItem>
                 <FormLabel>Name</FormLabel>
                 <FormControl>
-                  <Input placeholder="John Doe" {...field} />
+                  <Input placeholder="Your name" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -79,7 +79,7 @@ const ContactForm = () => {
               <FormItem>
                 <FormLabel>Email</FormLabel>
                 <FormControl>
-                  <Input type="email" placeholder="example@mail.com" {...field} />
+                  <Input type="email" placeholder="example@gmail.com" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -102,7 +102,7 @@ const ContactForm = () => {
           />
 
           <Button variant="secondary" type="submit" className="w-full text-white">
-            Send
+            Submit
           </Button>
         </form>
       </ShadForm>
